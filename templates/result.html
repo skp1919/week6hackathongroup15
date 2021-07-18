@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="media content-section">
+    <div class="media-body {{ info['credit_score_class'] }}">
+      <h2 class="account-heading">Result: {{ info['credit_score_class'] }}</h2>
+    </div>
+</div>
+<div class="media content-section">
+    <div class="media-body">
+        <img src="static/explain.svg" alt="Decision Tree visualization"/>
+    </div>
+  </div>
+{% endblock content %}
